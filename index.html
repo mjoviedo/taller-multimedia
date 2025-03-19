@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller multimedia</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('clase1/introdigital.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.5); /* Color de superposición */
+      background-blend-mode: multiply; /* Modo de mezcla */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .hero .buttons a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .buttons a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero .buttons a {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Taller multimedia</h1>
+    <div class="buttons">
+      <a href="#">Clase 1</a>
+      <a href="#">Clase 2</a>
+      <a href="#">Clase 3</a>
+    </div>
+  </div>
+</body>
+</html>
